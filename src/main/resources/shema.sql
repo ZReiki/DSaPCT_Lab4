@@ -17,5 +17,5 @@ create table watches(
     quantity int not null default 0,
     manufacturer_id int not null,
     constraint fk_watches_manufacturers foreign key (manufacturer_id) references manufacturers (manufacturer_id)
-        on delete cascade on update cascade
+        on delete cascade
 );

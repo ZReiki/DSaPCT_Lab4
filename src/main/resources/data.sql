@@ -7,15 +7,15 @@ TRUNCATE TABLE manufacturers;
 SET FOREIGN_KEY_CHECKS = 1;
 
 -- 1. Виробники (Швейцарія, Японія, Німеччина, США)
-INSERT INTO manufacturers (manufacturer_id, name, country) VALUES
-   (1, 'Tissot', 'Switzerland'),
-   (2, 'Casio', 'Japan'),
-   (3, 'Seiko', 'Japan'),
-   (4, 'Rolex', 'Switzerland'),
-   (5, 'Omega', 'Switzerland'),
-   (6, 'Citizen', 'Japan'),
-   (7, 'Sinn', 'Germany'),
-   (8, 'Timex', 'USA');
+INSERT INTO manufacturers (name, country) VALUES
+   ('Tissot', 'Switzerland'),
+   ('Casio', 'Japan'),
+   ('Seiko', 'Japan'),
+   ('Rolex', 'Switzerland'),
+   ('Omega', 'Switzerland'),
+   ('Citizen', 'Japan'),
+   ('Sinn', 'Germany'),
+   ('Timex', 'USA');
 
 -- 2. Годинники (з різними типами, цінами та залишками на складі)
 INSERT INTO watches (brand, type, price, quantity, manufacturer_id) VALUES
